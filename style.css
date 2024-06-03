@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 250ms;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(128deg, #003333, #0ec3c0);
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    width: 600px;
+    margin-top: 150px;
+}
+
+.box-content{
+    width: 100%;
+    background-color: white;
+    padding: 40px 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.task{
+    position: relative;
+}
+
+.task > input{
+    width: 100%;
+    height: 40px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: #cccccc;
+    padding: 5px 20px;
+    margin-top: 15px;
+}
+
+.task > button{
+    width: 90px;
+    height: 40px;
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: #ff6633;
+    color: white;
+    cursor: pointer;
+}
+
+.task > button:hover{
+    background-color: #fa5721;
+}
+
+.box-content > h2{
+    width: 100%;
+    text-align: start;
+}
+
+.task-content{
+    width: 495px;
+    text-align: start;
+    margin: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    animation: fade-in .5s ease;
+}
+
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+        margin-top: 0px;
+    }100%{
+        opacity: 1;
+        margin-top: 40px;
+    }
+} 
+
+.task-content-btn{
+    display: flex;
+    gap: 5px;
+}
+
+.task-content-btn > button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.task-content-btn > button:nth-child(1){
+    background-color: seagreen;
+}
+.task-content-btn > button > i:nth-child(1){
+    color: white;
+}
+
+.task-content-btn > button:nth-child(2){
+    background-color: rgb(255, 179, 0);
+}
+.task-content-btn > button > i:nth-child(2){
+    color: white;
+}
+
+.task-content-btn > button:nth-child(1):hover{
+    background-color: rgb(33, 115, 68);
+}
+
+.task-content-btn > button:nth-child(2):hover{
+    background-color: rgb(197, 141, 11);
+}
+
+.task-content-btn > button:nth-child(3){
+    background-color: rgb(255, 68, 0);
+}
+
+.task-content-btn > button:nth-child(3):hover{
+    background-color: rgb(186, 57, 10);
+}
